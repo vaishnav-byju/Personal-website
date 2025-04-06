@@ -1,0 +1,80 @@
+.feedback {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    width: 750px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10 auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#completed {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .feedback {
+        max-width: 95%;
+    }
+
+    input, textarea {
+        width: 90%;
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    input, textarea {
+        width: 85%;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}

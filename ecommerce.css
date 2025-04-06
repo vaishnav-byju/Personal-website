@@ -1,0 +1,54 @@
+body{
+    background-image: url(""C:\Users\Vaishnav\OneDrive\Desktop\html\images\AdobeStock_201780104_Preview.jpeg"");
+    background-position: center;
+    background-attachment: fixed;
+    }
+    header{
+        align-items: center;
+        background-color: white;
+        border-radius: 5px;
+    }
+    header div{
+        border: 3px;
+        height: 100px;
+        text-align: center;
+        padding: 10px;
+    }
+    header img{
+        height: 50px;
+        left: 20px;
+    }
+   .nav{
+        padding: 5px;
+        background-color: rgb(167, 165, 165);
+        border: 3px;
+        border-color: rgb(167, 165, 165);
+    }
+    .hul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+    .hli{
+        padding: 15px;
+    }
+    .hli:hover{
+        background-color: white;
+        border-radius: 5px;
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+    }
+    .bul{
+        list-style: none;
+        justify-content: center;
+        border: 5px;
+        border-color: black;
+        width: 200px;
+    }
+    .bli{
+        background-color: gray;
+        border: 5px; 
+        padding: 15px;
+    }
