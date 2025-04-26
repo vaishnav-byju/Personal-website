@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback</title>
-    <link rel="stylesheet" href="feedback.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
 </head>
 <body>
-    <div id="completed">
-        <div class="feedback">
-            <h2>I'd love to hear what you think!</h2>
-            <form>
-                <label for="name">Your Name</label><br>
-                <input type="text" id="name" name="name" placeholder="Your Name"><br>
-                
-                <label for="email">Your Email</label><br>
-                <input type="email" id="email" name="email" placeholder="Your Email"><br>
-                
-                <label for="feedback">Your Feedback</label><br>
-                <textarea id="feedback" name="feedback" rows="5" placeholder="Your Feedback"></textarea><br>
-                
-                <button type="submit" onclick="complete()">Submit Feedback</button>
-            </form>
-        </div>
-    </div>
+    <div id="completed">
+        <div class="feedback">
+            <h2>I'd love to hear what you think!</h2>
+            <form>
+                <label for="name">Your Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name"><br>
 
-    <script>
-        function complete(){
-            let a="THANK YOU FOR YOUR FEEDBACK!"
-            document.getElementById("completed").innerHTML = a;
-        }
-    </script>
+                <label for="email">Your Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email"><br>
+
+                <label for="feedback">Your Feedback</label><br>
+                <textarea id="feedback" name="feedback" rows="5" placeholder="Your Feedback"></textarea><br>
+
+                <button type="submit" onclick="complete(); return false;">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function complete() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+
+            if (name === "") {
+                alert("Name must not be blank.");
+                return false;
+            }
+
+            if (!email.includes("@")) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            let a = "THANK YOU FOR YOUR FEEDBACK!";
+            document.getElementById("completed").innerHTML = a;
+        }
+    </script>
 </body>
 </html>
-
-
